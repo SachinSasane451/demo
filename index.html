@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        border: 2px solid red;
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        background-color: red;
+        animation-name: sach;
+        animation-duration: 5s;
+        position: relative;
+        animation-iteration-count: 3;
+        /* animation-delay: 2s; */
+        animation-direction: alternate-reverse;
+        animation-fill-mode: forwards;
+    }
+
+
+
+    @keyframes sach {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        /*when animation is 0% complete*/
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+
+        /*when animation is 25% complete*/
+        50% {
+            background-color: blue;
+            left: 200px;
+            top: 200px;
+        }
+
+        /*when animation is 50% complete*/
+
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 200px;
+        }
+
+        /*when animation is 75% complete*/
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        /*when animation is 100% complete*/
+    }
+</style>
+
+<body>
+    <div>
+        <!-- <h1>Sachin</h1> -->
+    </div>
+</body>
+
+</html>
